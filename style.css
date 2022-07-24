@@ -26,10 +26,6 @@ a {
   color: black;
 }
 
-a:hover {
-  filter: brightness(2);
-}
-
 a.profile-acct-link {
   gap: 1rem;
 }
@@ -72,7 +68,6 @@ input {
 h1,
 h2,
 h3,
-h4,
 p {
   margin: 0;
 }
@@ -107,8 +102,8 @@ ul {
 }
 
 .border {
-  align-self: center;
   width: 70%;
+  align-self: center;
   border-bottom: 1px solid lightgray;
 }
 
@@ -189,10 +184,6 @@ ul {
   gap: 0.5rem;
 }
 
-.profile-login-container h4 {
-  margin: 0;
-}
-
 .profile-login-container button {
   border: none;
   background-color: var(--header-background-color);
@@ -254,10 +245,7 @@ ul {
   background-color: var(--sidebar-background-color);
 }
 
-.sidebar h1 {
-  color: white;
-}
-
+.sidebar h1,
 .sidebar a {
   color: white;
 }

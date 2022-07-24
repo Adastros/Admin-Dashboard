@@ -6,6 +6,7 @@
   --card-left-border-color: #e7bb41;
   --annoucement-background-color: #ffffff;
   --trending-background-color: #ffffff;
+  --headline-text-color: gray;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -128,6 +129,10 @@ ul {
   filter: brightness(0.9);
 }
 
+.headline {
+  color: var(--headline-text-color);
+}
+
 .icon {
   height: 35px;
   width: 35px;
@@ -150,7 +155,7 @@ ul {
 }
 
 .profile-headline-container {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .profile-img-large {
@@ -248,19 +253,24 @@ ul {
   grid-column: 2 / 3;
   grid-row: 2 /3;
 
-  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+.trending-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .trending-profile-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding: 1.5rem;
   margin-top: 0.5rem;
-}
-
-.trending-profile {
-  display: flex;
-  gap: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px black;
+  background-color: var(--card-background-color);
 }
 
 .welcome-user {

@@ -4,6 +4,8 @@
   --main-background-color: #f9f5f1;
   --card-background-color: #ffffff;
   --card-left-border-color: #e7bb41;
+  --annoucement-background-color: #ffffff;
+  --trending-background-color: #ffffff;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -88,10 +90,11 @@ ul {
 }
 
 .annoucements-container {
-  padding: 1.5rem;
+  margin: 1.5rem;
 }
 
 .border {
+  align-self: center;
   width: 70%;
   border-bottom: 1px solid lightgray;
 }
@@ -135,7 +138,9 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   margin: 0.5rem 0;
-  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px black;
+  background-color: var(--annoucement-background-color);
 }
 
 .logo,
